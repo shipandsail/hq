@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – World Cup 2026: FWC Predictor</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    a {
+      color: #f0f0f0;
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    h2 {
+      margin-top: 1.4rem;
+    }
+  </style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p><strong>Effective Date:</strong> June 5, 2026</p>
+
+<p>This Privacy Policy applies to the mobile application "World Cup 2026: FWC Predictor" (“we”, “our”, or “us”). It explains how we handle data and privacy for this app.</p>
+
+<h2>1. What Data is Collected (and what is NOT)</h2>
+<p>• Personally Identifiable Information (PII): Zero collected. There are no sign-ups, no accounts, no names, no emails, and no hardware/device identifier tracking.</p>
+<p>• Anonymous User ID: The app generates a completely random identifier on the device (for example, <code>anon_1717...</code>) and stores it in local storage/SharedPreferences to associate your presence in chats and locally lock poll predictions.</p>
+<p>• Poll Predictions: Individual vote choices are only saved locally on the device so you cannot vote twice. On the server, predictions are stored only as anonymous aggregate count increments (for example, “+1 for Brazil”).</p>
+
+<h2>2. Chat Messages & Presence</h2>
+<p>• Messages: The text you write and your anonymous ID are sent to the Firebase Realtime Database so other users in the room can see them.</p>
+<p>• Presence: When you enter a room, a temporary presence flag is set under your anonymous ID. When you leave the room or close the app, it is automatically removed via <code>.onDisconnect().remove()</code>.</p>
+<p>• Retention: Because no accounts are tied to these messages, they remain transient and anonymous. This makes it possible to clear or purge chat history nodes periodically on the backend database.</p>
+
+<h2>3. Security</h2>
+<p>We use secure connections for any server communication. The app does not retain personal profile data or device identifiers beyond the anonymous ID stored locally for app functionality.</p>
+
+<h2>4. Changes to This Policy</h2>
+<p>We may update this Privacy Policy occasionally. Any changes will be reflected on this page with an updated effective date. Continued use of the app after changes constitutes your acceptance.</p>
+
+<h2>5. Contact</h2>
+<p>If you have questions about this Privacy Policy, please contact us at: splopshq@proton.me</p>
+
+<p><a href="/index.html">← Back to Home</a></p>
+</body>
+</html>
